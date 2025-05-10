@@ -22,6 +22,10 @@ RuntimeDebugTools="*res://addons/runtime_debug_tools/scenes/remote_inspector.tsc
 CsgToolkitAutoload="*res://addons/csg_toolkit/scripts/csg_toolkit_config.gd"
 Signal_Debugger="*res://addons/SignalVisualizer/Debugger/SignalDebugger.gd"
 
+[debug]
+
+gdscript/warnings/untyped_declaration=1
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/SignalVisualizer/plugin.cfg", "res://addons/csg_toolkit/plugin.cfg", "res://addons/fabimakesgames.embed_game/plugin.cfg", "res://addons/runtime_debug_tools/plugin.cfg", "res://addons/script-ide-1.9.0/addons/script-ide/plugin.cfg", "res://addons/script-ide/plugin.cfg", "res://addons/shaker/plugin.cfg")
