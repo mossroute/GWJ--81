@@ -1,7 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://bwggrf7sbmkcv"]
+[gd_scene load_steps=18 format=3 uid="uid://bwggrf7sbmkcv"]
 
 [ext_resource type="Script" uid="uid://d3s8yxuvpmekm" path="res://addons/PlayerCharacter/StateMachine/PlayerCharacterScript.gd" id="1_h128t"]
 [ext_resource type="Script" uid="uid://b0fbr48rbvn27" path="res://addons/PlayerCharacter/Camera/CameraScript.gd" id="2_x12n0"]
+[ext_resource type="PackedScene" uid="uid://btt4gl8xud71e" path="res://Art/3d/blaster-a.glb" id="8_itrj8"]
 [ext_resource type="Script" uid="uid://dx02l6p6behb8" path="res://addons/PlayerCharacter/UI/HUDScript.gd" id="16_5jm78"]
 [ext_resource type="FontFile" uid="uid://bwr73i28ligrq" path="res://addons/Arts/Ticketing.ttf" id="17_ryxgj"]
 [ext_resource type="Script" uid="uid://sca7ypsol83f" path="res://addons/PlayerCharacter/StateMachine/StateMachineScript.gd" id="54_e0r17"]
@@ -57,17 +58,9 @@ bunnyHopDmsIncre = 3.0
 baseHitboxHeight = 2.0
 baseModelHeight = 1.0
 heightChangeSpeed = 10.0
-crouchSpeed = 5.0
-crouchAccel = 7.0
-crouchDeccel = 7.0
-crouchHitboxHeight = 1.2
-crouchModelHeight = 0.6
-walkSpeed = 8.0
-walkAccel = 8.0
-walkDeccel = 8.0
-runSpeed = 12.0
-runAccel = 5.0
-runDeccel = 5.0
+walkSpeed = 10.0
+walkAccel = 10.0
+walkDeccel = 10.0
 jumpHeight = 2.0
 jumpTimeToPeak = 0.3
 jumpTimeToFall = 0.24
@@ -127,10 +120,14 @@ fov = 90.0
 near = 0.01
 far = 1000.0
 
+[node name="blaster-a2" parent="CameraHolder/Camera" instance=ExtResource("8_itrj8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.262309, -0.211622, -0.368928)
+
 [node name="Hitbox" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_5yjma")
 
 [node name="Model" type="MeshInstance3D" parent="."]
+visible = false
 layers = 2
 material_override = SubResource("StandardMaterial3D_6bkys")
 mesh = SubResource("CapsuleMesh_p2iaj")

@@ -25,24 +25,24 @@ var walkOrRun : String = "WalkState" #keep in memory if play char was walking or
 @export var baseModelHeight : float
 @export var heightChangeSpeed : float
 
-@export_group("Crouch variables")
-@export var crouchSpeed : float
-@export var crouchAccel : float
-@export var crouchDeccel : float
-@export var continiousCrouch : bool = false #if true, doesn't need to keep crouch button on to crouch
-@export var crouchHitboxHeight : float
-@export var crouchModelHeight : float
+#@export_group("Crouch variables")
+#@export var crouchSpeed : float
+#@export var crouchAccel : float
+#@export var crouchDeccel : float
+#@export var continiousCrouch : bool = false #if true, doesn't need to keep crouch button on to crouch
+#@export var crouchHitboxHeight : float
+#@export var crouchModelHeight : float
 
 @export_group("Walk variables")
 @export var walkSpeed : float
 @export var walkAccel : float
 @export var walkDeccel : float
 
-@export_group("Run variables")
-@export var runSpeed : float
-@export var runAccel : float 
-@export var runDeccel : float 
-@export var continiousRun : bool = false #if true, doesn't need to keep run button on to run
+#@export_group("Run variables")
+#@export var runSpeed : float
+#@export var runAccel : float 
+#@export var runDeccel : float 
+#@export var continiousRun : bool = false #if true, doesn't need to keep run button on to run
 
 @export_group("Jump variables")
 @export var jumpHeight : float
